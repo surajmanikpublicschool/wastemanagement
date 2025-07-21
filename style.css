@@ -1,0 +1,40 @@
+body {
+  min-height: 100vh;
+}
+
+#popupVoteReady {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.star-rating .star {
+  font-size: 2rem;
+  color: #ced4da;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star-rating .star.selected,
+.star-rating .star:hover,
+.star-rating .star:hover ~ .star {
+  color: #ffc107;
+}
+
+.card {
+  border-radius: 18px;
+}
+
+#voteSection {
+  margin-bottom: 60px;
+}
+
+#currentWinner {
+  background: #eaf6ea;
+  color: #176726;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-weight: bold;
+}
